@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: site-deployment
+  labels:
+    app: swift-api-k8s
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: swift-api-k8s
+  template:
+    metadata:
+      labels:
+        app: swift-api-k8s
+    spec:
+      containers:
+      - name: swift-api-k8s
+        image: wabz/swift-api-k8s:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80

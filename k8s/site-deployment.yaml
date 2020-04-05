@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: swift-api-k8s
-        image: wabz/swift-api-k8s:v1
+        image: swift-template:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80

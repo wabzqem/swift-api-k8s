@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: swift-api-k8s
-        image: swift-template
+        image: gcr.io/PROJECT_ID/IMAGE:TAG
         imagePullPolicy: Always
         ports:
         - containerPort: 80

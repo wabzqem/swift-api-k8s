@@ -23,7 +23,7 @@ env:
   GKE_CLUSTER: swift-template
   IMAGE: swift-template
   REGISTRY_HOSTNAME: gcr.io
-  DEPLOYMENT_NAME: swift-template
+  DEPLOYMENT_NAME: site-deployment
 
 jobs:
   setup-build-publish-deploy:
